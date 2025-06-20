@@ -1,0 +1,65 @@
+ Step 1: Open Terminal and Navigate to Scriptly
+bash
+Copy code
+cd ~/Desktop/scriptly
+(Or wherever your scriptly folder is located.)
+
+🌀 Step 2: Create a Virtual Environment
+bash
+Copy code
+python3 -m venv venv
+This creates a venv/ folder inside scriptly.
+
+🔁 Step 3: Activate the Virtual Environment
+On macOS/Linux:
+bash
+Copy code
+source venv/bin/activate
+On Windows:
+bash
+Copy code
+venv\Scripts\activate
+After this, your terminal should show something like:
+
+scss
+Copy code
+(venv) yourname@yourmac scriptly %
+📦 Step 4: Install the Required Packages
+Run:
+
+bash
+Copy code
+pip install -r requirements.txt
+This installs:
+
+llama-cpp-python (for local code generation)
+
+pyttsx3, speechrecognition, pyaudio (for voice support)
+
+🚀 Step 5: Run Scriptly
+bash
+Copy code
+python main.py
+Now follow the prompts:
+
+Type text or voice
+
+Enter or say a Python code idea
+
+Scriptly will generate the code and save it to output/
+
+✅ Optional: Deactivate the Virtual Environment When Done
+bash
+Copy code
+deactivate
+🧪 Example Test Run
+bash
+Copy code
+python main.py
+Then type:
+
+arduino
+Copy code
+text
+Write a Python program that counts how many times a word appears in a text file
+Check the output/ folder — it will contain the Python file.
